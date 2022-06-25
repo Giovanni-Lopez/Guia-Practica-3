@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+</head>
+
+<body>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            outline: none;
+            color: white;
+            background-color: rgba(24, 24, 26, 0.637);
+            font-family: "arial";
+            text-decoration: none;
+            padding: 2px 1px 0;
+        }
+
+        a:active {
+            background-color: rgb(0, 253, 232);
+            color: #000000;
+        }
+
+        header {
+            font-family: Helvetica;
+            width: 680px;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #menu li>a {
+            color: white;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+            min-width: 100px;
+        }
+
+        #menu li>a:hover {
+            color: black;
+            background-color: rgb(0, 253, 232);
+        }
+
+        #menu>li {
+            float: left;
+            text-align: center
+        }
+
+        #menu>li>ul {
+            background-color: rgba(0, 0, 0, 0.774);
+            display: none;            
+        }
+
+        #menu>li:hover>ul {
+            display: block;
+        }
+
+        body {
+
+            background: url("img/fondo.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        h1 {
+            font-size: 5em;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-family: "arial";
+            color: darkblue;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    </style>
+
+    <header>
+        <nav>
+            <ul id="menu">
+
+                <li style="float:left"><a class="active" href="">Inicio</a></li>
+                <li><a href="paginas/rutas_turisticas.html" target="_blank">Rutas Turisticas</a></li>
+                <li><a href="">Naturaleza</a>
+                    <ul>
+                        <li><a href="paginas/volcanes.html" target="_blank">Volcanes</a></li>
+                        <li><a href="paginas/lagos.html" target="_blank">Lagos</a></li>
+                        <li><a href="paginas/lagunas.html" target="_blank">Lagunas</a></li>
+                        <li><a href="paginas/rios.html" target="_blank">Rios</a></li>
+                    </ul>
+                </li>
+                <li><a href="paginas/playas.html">Playas</a></li>
+                <li><a href="">Sitios Arqueologicos</a>
+                    <ul>
+                        <li><a href="paginas/parques_acuaticos.html" target="_blank">Parques Acuaticos</a></li>
+                        <li><a href="paginas/parques_nacionales.html" target="_blank">Parques Nacionales</a></li>
+                        <li><a href="paginas/parques_recreativos.html" target="_blank">Parques Recreativos</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <h1>El Salvador</h1>
+
+</body>
+
+</html>
