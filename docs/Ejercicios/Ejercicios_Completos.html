@@ -10,86 +10,216 @@
 
 <body>
 
-    <details>
-        <summary>Ejercicio 1</summary>
-        <main>
-            <section>
-                <form action="">
-                    <fieldset style="width: 30%;">
-                        <legend>Indique sus preferencias por favor</legend>
-                        <label for="">Elija una fecha: </label>
-                        <input type="date" name="fecha" id="">
-                        <br>
-                        <label for="">Elija un fichero: </label>
-                        <input type="file" name="fichero" id="">
-                        <br>
-                        <input type="radio" name="amd" id="">
-                        <label for="">AMD</label>
-                        <input type="radio" name="inteli5" id="">
-                        <label for="">Intel i5</label>
-                        <input type="radio" name="inteli7" id="">
-                        <label for="">Intel i7</label>
+    <style>
+        img {
+            margin: 0 8px;
+        }
 
-                    </fieldset>
-                </form>
+        table {
+            margin: 0 auto;
+        }
 
-                <br>
+        a {
+            outline: none;
+            color: white;
+            background-color: rgba(24, 24, 26, 0.637);
+            font-family: "arial";
+            text-decoration: none;
+            padding: 2px 1px 0;
+        }
 
-                <form action="">
-                    <fieldset style="width: 30%;">
-                        <legend>Indique sus preferencias por favor</legend>
-                        <input type="radio" name="matematicas" id="">
-                        <label for="">Matematicas</label>
-                        <input type="radio" name="historia" id="">
-                        <label for="">Historia</label>
-                        <input type="radio" name="geografia" id="">
-                        <label for="">Geografia</label>
-                        <input type="radio" name="lengua" id="">
-                        <label for="">Lengua</label>
-                        <br>
-                        <label for="">Nombre: </label>
-                        <input type="text" name="nombre" id="">
-                        <br>
-                        <br>
-                        <label for="">Apellidos:</label>
-                        <input type="text" name="apellidos" id="">
-                        <br>
-                        <br>
-                        <label for="">Direccion: </label>
-                        <input type="text" name="direccion" id="">
-                        <br>
-                        <br>
-                        <label for="">Elija un color: </label>
-                        <input type="color" name="color" id="">
+        a:active {
+            background-color: rgb(0, 253, 232);
+            color: #000000;
+        }
 
-                        <br>
-                        <textarea name="escribe" id="" placeholder="Utilice este cuadro para escribir" cols="30"
-                            rows="10"></textarea>
-                        <br>
-                        <label for="">Elije una fecha: </label>
-                        <input type="date" name="fecha" id="">
-                        <br>
-                        <select name="Ingles" id="">
-                            <option value="">Ingles</option>
-                            <option value="Opcion1">Opcion1</option>
-                            <option value="Opcion2">Opcion2</option>
-                        </select>
-                        <br>
-                        <label for="">Elija una hora: </label>
-                        <input type="time" name="hora" id="">
-                        <br>
-                        <label for="">Elija un fichero: </label>
-                        <input type="file" name="Fichero" id="">
-                        <br>
-                        <input type="checkbox" name="M" id="">
-                        <label for="">Mujer</label>
-                        <input type="checkbox" name="H" id="">
-                        <label for="">Hombre</label>
-                    </fieldset>
-                </form>
-            </section>
-        </main>
-    </details>
+        h1 {
+            color: red;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            font-family: Helvetica;
+            width: 950px;
+            margin: 0 auto;
+        }
+
+        ul {
+            list-style: none;                    
+        }
+
+        #menu li>a {           
+            color: white;
+            padding: 10px;
+            display: block;
+            text-decoration: none;
+            min-width: 100px;
+
+        }
+
+        #menu li>a:hover {
+            color: black;
+            background-color: rgb(0, 253, 232);
+
+        }
+
+        #menu>li {
+            float: left;
+            text-align: center
+        }
+
+        #menu>li>ul {            
+            background-color: rgba(0, 0, 0, 0.774); 
+            display: none;
+            position: absolute;
+        }
+
+        #menu>li:hover>ul {
+            display: block;
+        }
+
+        body {
+
+            background: url("../img/fondo.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+
+        .contenedor {
+            background: white;  
+            width: 90%;      
+            margin: 0 auto;          
+        }
+
+        .p1{
+            margin-top: 1%;
+        
+        }                             
+    </style>
+
+    <header>
+        <nav>
+            <ul id="menu">
+
+                <li style="float:left"><a class="active" href="../index.html">Inicio</a></li>
+                <li><a href="../paginas/rutas_turisticas.html" target="_blank">Rutas Turisticas</a></li>
+                <li><a href="">Naturaleza</a>
+                    <ul>
+                        <li><a href="../paginas/volcanes.html" target="_blank">Volcanes</a></li>
+                        <li><a href="../paginas/lagos.html" target="_blank">Lagos</a></li>
+                        <li><a href="../paginas/lagunas.html" target="_blank">Lagunas</a></li>
+                        <li><a href="../paginas/rios.html" target="_blank">Rios</a></li>
+                    </ul>
+                </li>
+                <li><a href="../paginas/playas.html" target="_blank">Playas</a></li>
+                <li><a href="../paginas/sitios_arqueologicos.html" target="_blank">Sitios Arqueologicos</a></li>
+                <li><a href="">Parques</a>
+                    <ul>
+                        <li><a href="../paginas/parques_acuaticos.html" target="_blank">Parques Acuaticos</a></li>
+                        <li><a href="../paginas/parques_nacionales.html" target="_blank">Parques Nacionales</a></li>
+                        <li><a href="../paginas/parques_recreativos.html" target="_blank">Parques Recreativos</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Formularios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <br>
+    <br>
+
+    <table>
+        
+    </table>
+
+<div class="contenedor">        
+        <details>
+            <summary>Ejercicio 1</summary>
+            <main>
+                <section>
+                    <form action="">
+                        <fieldset style="width: 30%;">
+                            <legend>Indique sus preferencias por favor</legend>
+                            <label for="">Elija una fecha: </label>
+                            <input type="date" name="fecha" id="">
+                            <br>
+                            <label for="">Elija un fichero: </label>
+                            <input type="file" name="fichero" id="">
+                            <br>
+                            <input type="radio" name="amd" id="">
+                            <label for="">AMD</label>
+                            <input type="radio" name="inteli5" id="">
+                            <label for="">Intel i5</label>
+                            <input type="radio" name="inteli7" id="">
+                            <label for="">Intel i7</label>
+    
+                        </fieldset>
+                    </form>
+    
+                    <br>
+    
+                    <form action="">
+                        <fieldset style="width: 30%;">
+                            <legend>Indique sus preferencias por favor</legend>
+                            <input type="radio" name="matematicas" id="">
+                            <label for="">Matematicas</label>
+                            <input type="radio" name="historia" id="">
+                            <label for="">Historia</label>
+                            <input type="radio" name="geografia" id="">
+                            <label for="">Geografia</label>
+                            <input type="radio" name="lengua" id="">
+                            <label for="">Lengua</label>
+                            <br>
+                            <label for="">Nombre: </label>
+                            <input type="text" name="nombre" id="">
+                            <br>
+                            <br>
+                            <label for="">Apellidos:</label>
+                            <input type="text" name="apellidos" id="">
+                            <br>
+                            <br>
+                            <label for="">Direccion: </label>
+                            <input type="text" name="direccion" id="">
+                            <br>
+                            <br>
+                            <label for="">Elija un color: </label>
+                            <input type="color" name="color" id="">
+    
+                            <br>
+                            <textarea name="escribe" id="" placeholder="Utilice este cuadro para escribir" cols="30"
+                                rows="10"></textarea>
+                            <br>
+                            <label for="">Elije una fecha: </label>
+                            <input type="date" name="fecha" id="">
+                            <br>
+                            <select name="Ingles" id="">
+                                <option value="">Ingles</option>
+                                <option value="Opcion1">Opcion1</option>
+                                <option value="Opcion2">Opcion2</option>
+                            </select>
+                            <br>
+                            <label for="">Elija una hora: </label>
+                            <input type="time" name="hora" id="">
+                            <br>
+                            <label for="">Elija un fichero: </label>
+                            <input type="file" name="Fichero" id="">
+                            <br>
+                            <input type="checkbox" name="M" id="">
+                            <label for="">Mujer</label>
+                            <input type="checkbox" name="H" id="">
+                            <label for="">Hombre</label>
+                        </fieldset>
+                    </form>
+                </section>
+            </main>
+        </details>
 
     <details>
         <summary>Ejercicio 2</summary>
@@ -1137,6 +1267,7 @@
             </table>
         </form>
     </details>
+</div>    
 </body>
 
 </html>
