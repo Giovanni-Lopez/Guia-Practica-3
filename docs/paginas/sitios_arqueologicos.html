@@ -10,12 +10,9 @@
 
 <body>
     <style>
-        img {
-            margin: 0 8px;
-        }
-
-        table {
-            margin: 0 auto;
+        * {
+            margin: 0;
+            padding: 0;
         }
 
         a {
@@ -32,19 +29,11 @@
             color: #000000;
         }
 
-        h1 {
-            color: red;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
         header {
             font-family: Helvetica;
-            width: 950px;
-            margin: 0 auto;
+            margin: 0 200px;
+            display: flex;
+            position: fixed;
         }
 
         ul {
@@ -57,13 +46,11 @@
             display: block;
             text-decoration: none;
             min-width: 100px;
-
         }
 
         #menu li>a:hover {
             color: black;
             background-color: rgb(0, 253, 232);
-
         }
 
         #menu>li {
@@ -74,11 +61,23 @@
         #menu>li>ul {
             background-color: rgba(0, 0, 0, 0.774);
             display: none;
-            position: absolute;
+            position: relative;
         }
 
         #menu>li:hover>ul {
             display: block;
+        }
+
+        img {
+            margin: 0 8px;
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: red;
         }
 
         body {
@@ -99,7 +98,6 @@
 
         }
     </style>
-
     <header>
         <nav>
             <ul id="menu">
@@ -198,7 +196,8 @@
             </td>
 
             <td>
-                <img src="../img/joya_de_ceren.jpg" alt="Imagen de sitio arqueológico joya de ceren" width="220" height="140">
+                <img src="../img/joya_de_ceren.jpg" alt="Imagen de sitio arqueológico joya de ceren" width="220"
+                    height="140">
             </td>
 
             <td>
@@ -230,7 +229,8 @@
 
         <tr align="center">
             <td colspan="4">
-                <img src="../img/casa_blanca.jpg" alt="Imagen de sitio arqueológico casa blanca" width="220" height="140">
+                <img src="../img/casa_blanca.jpg" alt="Imagen de sitio arqueológico casa blanca" width="220"
+                    height="140">
             </td>
         </tr>
 
@@ -245,4 +245,5 @@
     <br>
 
 </body>
+
 </html>
